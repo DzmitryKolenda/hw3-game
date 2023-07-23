@@ -19,12 +19,12 @@ if (userName !== null) {
       let computerMove = arr[rand];
   
       if (arr.includes(userMove)) {
-        if (userMove.toLowerCase === computerMove) {
+        if (userMove === computerMove) {
           alert(`Computer move is: ${computerMove}`);
         } else {
-          if ((userMove.toLowerCase === 'rock' && computerMove === 'scissors') 
-            || (userMove.toLowerCase === 'scissors' && computerMove === 'paper')
-            || (userMove.toLowerCase === 'paper' && computerMove === 'rock')) {
+          if ((userMove === 'rock' && computerMove === 'scissors') 
+            || (userMove === 'scissors' && computerMove === 'paper')
+            || (userMove === 'paper' && computerMove === 'rock')) {
         
             alert(`Computer move is: ${computerMove}`);
       
@@ -68,4 +68,4 @@ if (userName !== null) {
 
 
 
-/* console.log(userScore, ' ', computerScore ); */
+/* console.log(userMove); */
